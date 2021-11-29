@@ -19,4 +19,8 @@ class UsersProfileTest < ActionDispatch::IntegrationTest
       assert_match micropost.content, response.body
     end
   end
+  
+    # assert_select @user.microposts.count
+    # assert_match @user.active_relationships.to_s, response.body
+    # assert_match @user.passive_relationships.to_s, response.body
 end
